@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fußball Screener - Matrix Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="FUSSBALL SCREENER">FUSSBALL SCREENER</h1>
+            <div class="subtitle">BUNDESLIGA LIVE MONITORING SYSTEM</div>
+        </header>
+
+        <div class="controls">
+            <button class="matrix-btn active" data-league="bl1">1. BUNDESLIGA</button>
+            <button class="matrix-btn" data-league="bl2">2. BUNDESLIGA</button>
+            <button class="matrix-btn refresh-btn" id="refresh">↻ REFRESH</button>
+        </div>
+
+        <div class="matches-container" id="matches">
+            <div class="loading">
+                <span class="loading-text">INITIALIZING...</span>
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="status">
+                <span id="status">SYSTEM ONLINE</span> |
+                <span id="last-update">--:--:--</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

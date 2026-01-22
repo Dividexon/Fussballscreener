@@ -1,0 +1,22 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies (falls später npm verwendet wird)
+node_modules/
+package-lock.json
+
+# Build (falls später ein Build-Prozess hinzugefügt wird)
+dist/
+build/
