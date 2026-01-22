@@ -160,7 +160,7 @@ h1 {
 .match-card {
     background: rgba(0, 20, 0, 0.8);
     border: 1px solid #00ff00;
-    padding: 20px;
+    padding: 25px 20px 20px 20px;
     margin-bottom: 15px;
     position: relative;
     transition: all 0.3s;
@@ -175,12 +175,13 @@ h1 {
 
 .match-status {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 0.8em;
-    padding: 5px 10px;
+    top: 15px;
+    right: 15px;
+    font-size: 0.75em;
+    padding: 4px 8px;
     border: 1px solid #00ff00;
     text-transform: uppercase;
+    z-index: 10;
 }
 
 .match-status.live {
