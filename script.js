@@ -42,7 +42,9 @@ window.addEventListener('resize', () => {
 // Fußball Screener Logic
 const API_BASE = 'https://api.openligadb.de';
 let currentLeague = 'bl1';
-let currentSeason = new Date().getFullYear();
+// Saison-Berechnung: Jan-Juli = Vorjahr (z.B. Jan 2026 → Saison 2025/26 = 2025)
+const now = new Date();
+let currentSeason = now.getMonth() < 7 ? now.getFullYear() - 1 : now.getFullYear();
 let autoRefreshInterval;
 
 // Liga-Konfiguration
