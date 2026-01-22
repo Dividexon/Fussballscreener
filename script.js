@@ -58,12 +58,8 @@ const leagues = {
         apiName: 'bl2'
     },
     cl: {
-        name: 'UEFA Champions League',
-        apiName: 'cl'
-    },
-    el: {
-        name: 'UEFA Europa League',
-        apiName: 'el'
+        name: 'Champions League (DE)',
+        apiName: 'ucl2025'
     }
 };
 
