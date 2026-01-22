@@ -154,11 +154,12 @@ function displayMatches(matches, matchday) {
 
         html += `
             <div class="match-card">
-                <div class="match-status ${status}">${getStatusText(status, match)}</div>
-
                 <div class="match-header">
                     <div class="match-time">${formatDateTime(matchDate)}</div>
-                    <div class="matchday">SPIELTAG ${matchday}</div>
+                    <div class="match-header-right">
+                        <div class="matchday">SPIELTAG ${matchday}</div>
+                        <div class="match-status ${status}">${getStatusText(status, match)}</div>
+                    </div>
                 </div>
 
                 <div class="match-teams">

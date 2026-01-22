@@ -160,7 +160,7 @@ h1 {
 .match-card {
     background: rgba(0, 20, 15, 0.8);
     border: 1px solid #4a9f8c;
-    padding: 25px 20px 20px 20px;
+    padding: 20px;
     margin-bottom: 15px;
     position: relative;
     transition: all 0.3s;
@@ -171,18 +171,6 @@ h1 {
     transform: translateX(5px);
     box-shadow: 0 0 25px rgba(74, 159, 140, 0.5);
     border-color: #4a9f8c;
-}
-
-.match-status {
-    position: absolute;
-    top: -12px;
-    right: 15px;
-    font-size: 0.75em;
-    padding: 4px 8px;
-    border: 1px solid #4a9f8c;
-    text-transform: uppercase;
-    z-index: 10;
-    background: #0a1a17;
 }
 
 .match-status.live {
@@ -210,8 +198,12 @@ h1 {
 .match-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 15px;
+}
+
+.match-header-right {
+    text-align: right;
 }
 
 .match-time {
@@ -222,6 +214,15 @@ h1 {
 .matchday {
     font-size: 0.9em;
     color: #3d8577;
+}
+
+.match-status {
+    display: inline-block;
+    font-size: 0.75em;
+    padding: 4px 8px;
+    border: 1px solid #4a9f8c;
+    text-transform: uppercase;
+    margin-top: 5px;
 }
 
 .match-teams {
