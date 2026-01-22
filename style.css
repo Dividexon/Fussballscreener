@@ -175,13 +175,14 @@ h1 {
 
 .match-status {
     position: absolute;
-    top: 15px;
+    top: -12px;
     right: 15px;
     font-size: 0.75em;
     padding: 4px 8px;
     border: 1px solid #4a9f8c;
     text-transform: uppercase;
     z-index: 10;
+    background: #0a1a17;
 }
 
 .match-status.live {
