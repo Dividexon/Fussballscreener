@@ -54,6 +54,14 @@ const leagues = {
     bl2: {
         name: '2. Bundesliga',
         apiName: 'bl2'
+    },
+    cl: {
+        name: 'UEFA Champions League',
+        apiName: 'cl'
+    },
+    el: {
+        name: 'UEFA Europa League',
+        apiName: 'el'
     }
 };
 
